@@ -36,4 +36,4 @@ console.log(AreAllCharactersUnique('abbd'));            // false
 console.log(AreAllCharactersUnique('false'));           // true
 console.log(AreAllCharactersUnique(''));                // true
 console.log(AreAllCharactersUnique(new String()));      // true
-console.log(AreAllCharactersUnique(false));             // false
+console.log(AreAllCharactersUnique(false));             // Exception
