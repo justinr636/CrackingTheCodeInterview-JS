@@ -34,13 +34,14 @@ function BinaryTreeNode(data, left, right) {
 }
 
 function LinkedList(head) {
-    var self = this;
     this.head = head;
+    this.size = 1;
+}
 
-    this.prepend = function (item) {
-        item.next = self.head;
-        self.head = item;
-    };
+LinkedList.prototype.prepend = function (item) {
+    item.next = this.head;
+    this.head = item;
+    this.size++;
 }
 
 function LinkedListItem(data, next) {
